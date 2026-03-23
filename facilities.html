@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities — Hotel Masineni Grand, Anantapur</title>
+  <meta name="description" content="Discover world-class facilities at Hotel Masineni Grand — modern gym, high-speed Wi-Fi, 24/7 room service, banquets and more." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .facility-showcase { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center; padding: 80px 0; border-bottom: 1px solid var(--glass-border); }
+    .facility-showcase:last-child { border-bottom: none; }
+    .facility-showcase.reverse { direction: rtl; }
+    .facility-showcase.reverse > * { direction: ltr; }
+    .facility-visual { border-radius: var(--radius-xl); height: 380px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .facility-visual::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 40% 40%, rgba(255,255,255,0.07) 0%, transparent 70%); }
+    .fac-big-icon { font-size: 6rem; opacity: 0.35; }
+    .fac-tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); padding: 6px 16px; border: 1px solid rgba(201,169,110,0.3); border-radius: var(--radius-pill); display: inline-block; margin-bottom: 1.2rem; }
+    .fac-features { display: flex; flex-direction: column; gap: 10px; margin: 1.5rem 0; }
+    .fac-feature { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: var(--text-secondary); }
+    .fac-feature::before { content: '✦'; color: var(--gold-dark); font-size: 0.6rem; flex-shrink: 0; }
+    @media (max-width: 860px) { .facility-showcase { grid-template-columns: 1fr; gap: 36px; } .facility-showcase.reverse { direction: ltr; } .facility-visual { height: 260px; } }
+  </style>
+</head>
+<body>
+  <div class="ambient-orb ambient-orb-1"></div>
+  <div class="ambient-orb ambient-orb-2"></div>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-main">Masineni Grand</span><span class="logo-sub">Anantapur · Est. Heritage</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="accommodation.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="facilities.html" class="active">Facilities</a></li>
+        <li><a href="banquets.html">Banquets</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <a href="accommodation.html" class="btn-book-nav">Book Now</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <p class="eyebrow">Hotel Facilities</p>
+        <h1>World-Class Amenities</h1>
+        <p class="page-hero-desc">Everything you need for a perfect stay — fitness, connectivity, dining, and beyond. All under one extraordinary roof.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID OVERVIEW -->
+  <section class="section-pad bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">At a Glance</p>
+        <h2>Everything You Need</h2>
+      </div>
+      <div class="facilities-grid">
+        <div class="facility-item reveal"><span class="facility-icon">💪</span><h3>Modern Gymnasium</h3><p>Fully equipped unisex gym with professional instructors and state-of-the-art equipment.</p></div>
+        <div class="facility-item reveal stagger-1"><span class="facility-icon">📶</span><h3>High-Speed Wi-Fi</h3><p>Complimentary internet throughout — rooms, lobby, restaurants, and bar.</p></div>
+        <div class="facility-item reveal stagger-2"><span class="facility-icon">🍽️</span><h3>4 Dining Venues</h3><p>Petals, Tasttyy 24, Irish Over & The Bar — all under one roof.</p></div>
+        <div class="facility-item reveal stagger-3"><span class="facility-icon">🎉</span><h3>Banquet Halls</h3><p>Premium event spaces for weddings, corporate meetings, and celebrations.</p></div>
+        <div class="facility-item reveal stagger-4"><span class="facility-icon">🛎️</span><h3>24/7 Room Service</h3><p>Round-the-clock dining and service delivered to your room.</p></div>
+        <div class="facility-item reveal stagger-5"><span class="facility-icon">🚗</span><h3>Concierge & Travel</h3><p>Dedicated concierge for travel arrangements, tours, and local guidance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SHOWCASES -->
+  <section class="section-pad">
+    <div class="container">
+
+      <div class="facility-showcase reveal">
+        <div class="facility-visual" style="background-image:url('masineni_gym.avif');background-size:cover;background-position:center;">
+          <div class="fac-big-icon">💪</div>
+        </div>
+        <div>
+          <span class="fac-tag">Health & Fitness</span>
+          <h2>Modern Gymnasium</h2>
+          <div class="gold-rule" style="margin:1rem 0;max-width:160px;justify-content:flex-start;"><div class="gold-rule-diamond"></div></div>
+          <p class="body-text">The gymnasium at Hotel Masineni Grand stands as Anantapur's top-of-the-line fitness facility — a fully equipped, modern unisex gymnasium offering a complete fitness experience.</p>
+          <p class="body-text">Our certified fitness instructors are on hand to guide you through personalized workout routines, whether you're a seasoned athlete or just beginning your fitness journey.</p>
+          <div class="fac-features">
+            <div class="fac-feature">Professional certified fitness instructors on-site</div>
+            <div class="fac-feature">Cardio equipment — treadmills, ellipticals, bikes</div>
+            <div class="fac-feature">Strength training — free weights, cable machines</div>
+            <div class="fac-feature">Unisex facility — welcoming to all guests</div>
+            <div class="fac-feature">Customized exercise routine planning</div>
+            <div class="fac-feature">Clean towels and changing facilities provided</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="facility-showcase reverse reveal">
+        <div class="facility-visual" style="background:linear-gradient(135deg,#1a2a40,#0d2a50,#0a1a30);">
+          <div class="fac-big-icon">📶</div>
+        </div>
+        <div>
+          <span class="fac-tag">Connectivity</span>
+          <h2>High-Speed Wi-Fi</h2>
+          <div class="gold-rule" style="margin:1rem 0;max-width:160px;justify-content:flex-start;"><div class="gold-rule-diamond"></div></div>
+          <p class="body-text">Stay connected with the world without effort. Our complimentary high-speed Wi-Fi covers every inch of the property — your room, the lobby, all restaurants, the bar, and common areas.</p>
+          <p class="body-text">Check emails, join video calls, stream your favourite shows, or post your holiday highlights — all on us, always, with zero restrictions.</p>
+          <div class="fac-features">
+            <div class="fac-feature">Complimentary — no hidden charges, ever</div>
+            <div class="fac-feature">Coverage in all rooms, corridors, and lounges</div>
+            <div class="fac-feature">Available in all 4 dining venues</div>
+            <div class="fac-feature">Business-grade speed for video conferencing</div>
+            <div class="fac-feature">24/7 technical support available</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="facility-showcase reveal">
+        <div class="facility-visual" style="background:linear-gradient(135deg,#1a0d20,#3a1a50,#2a1040);">
+          <div class="fac-big-icon">🛎️</div>
+        </div>
+        <div>
+          <span class="fac-tag">Concierge Services</span>
+          <h2>24/7 Room Service & Concierge</h2>
+          <div class="gold-rule" style="margin:1rem 0;max-width:160px;justify-content:flex-start;"><div class="gold-rule-diamond"></div></div>
+          <p class="body-text">Our dedicated team is always available — any hour of the day or night. Whether you need a late-night meal, early morning travel arrangements, or recommendations for local experiences, we're here.</p>
+          <div class="fac-features">
+            <div class="fac-feature">24-hour in-room dining from our full menu</div>
+            <div class="fac-feature">Laundry and dry cleaning services</div>
+            <div class="fac-feature">Car hire, taxi, and airport transfer assistance</div>
+            <div class="fac-feature">Sightseeing tour arrangements in Anantapur</div>
+            <div class="fac-feature">Local dining and entertainment recommendations</div>
+            <div class="fac-feature">Wake-up calls and special requests</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-main">Masineni Grand</span><span class="logo-sub">Anantapur, Andhra Pradesh</span><p class="footer-tagline">Where Luxury Meets Warmth</p></div>
+      <nav class="footer-nav"><a href="aboutus.html">About</a><a href="accommodation.html">Rooms</a><a href="dining.html">Dining</a><a href="facilities.html">Facilities</a><a href="banquets.html">Banquets</a><a href="contact-us.html">Contact</a></nav>
+      <div class="footer-socials"><a href="https://www.facebook.com/Hotel-Masineni-Grand-944732685580276/" target="_blank" class="social-icon">📘</a><a href="https://www.instagram.com/hotelmasinenigrand/" target="_blank" class="social-icon">📸</a><a href="tel:7799718535" class="social-icon">📞</a></div>
+      <div class="footer-bottom"><p>© 2025 Hotel Masineni Grand. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

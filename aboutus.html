@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Hotel Masineni Grand, Anantapur</title>
+  <meta name="description" content="Learn about Hotel Masineni Grand — Anantapur's premier luxury hotel with a legacy of warmth, world-class service, and culinary excellence." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .timeline { position: relative; padding-left: 40px; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(180deg, var(--gold), transparent); }
+    .timeline-item { position: relative; margin-bottom: 40px; }
+    .timeline-item::before { content: ''; position: absolute; left: -37px; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--gold-dark); border: 2px solid var(--gold); box-shadow: 0 0 12px rgba(201,169,110,0.4); }
+    .timeline-year { font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 6px; }
+    .timeline-item h4 { margin-bottom: 6px; font-size: 1rem; color: var(--text-primary); }
+    .timeline-item p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .value-card { padding: 40px 32px; text-align: center; background: var(--glass-4); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); transition: var(--transition); }
+    .value-card:hover { border-color: var(--glass-border-gold); transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .value-icon { font-size: 2.5rem; margin-bottom: 1.2rem; display: block; }
+    .value-card h3 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+    .value-card p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .team-card { text-align: center; padding: 40px 24px; background: var(--glass-4); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); transition: var(--transition); }
+    .team-card:hover { border-color: var(--glass-border-gold); transform: translateY(-6px); }
+    .team-avatar { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1.25rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; border: 2px solid var(--glass-border-gold); }
+    .team-card h4 { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .team-card p { font-size: 0.78rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+    .team-card span { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; }
+    @media (max-width: 860px) { .values-grid, .team-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="ambient-orb ambient-orb-1"></div>
+  <div class="ambient-orb ambient-orb-2"></div>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-main">Masineni Grand</span><span class="logo-sub">Anantapur · Est. Heritage</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="aboutus.html" class="active">About</a></li>
+        <li><a href="accommodation.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="banquets.html">Banquets</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <a href="accommodation.html" class="btn-book-nav">Book Now</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <p class="eyebrow">Our Story</p>
+        <h1>About Hotel Masineni Grand</h1>
+        <p class="page-hero-desc">A legacy of warmth, excellence, and the finest hospitality that Anantapur has ever known.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section-pad">
+    <div class="container split-layout">
+      <div class="reveal-left">
+        <p class="eyebrow">Who We Are</p>
+        <h2>Anantapur's Finest Destination</h2>
+        <div class="gold-rule"><div class="gold-rule-diamond"></div></div>
+        <p class="body-text">Hotel Masineni Grand was born from a singular vision — to create a sanctuary of luxury in the heart of Anantapur that rivals the finest hotels in the world, while remaining rooted in the authentic warmth of Indian hospitality.</p>
+        <p class="body-text">From the moment you step through our doors, every detail has been curated to ensure your stay transcends the ordinary. Our team of dedicated hospitality professionals is committed to anticipating your every need.</p>
+        <p class="body-text">Whether you're here for business, leisure, or a cherished celebration, Hotel Masineni Grand is your home away from home — elevated to its finest form.</p>
+        <br>
+        <a href="contact-us.html" class="btn-primary">Reach Out To Us</a>
+      </div>
+      <div class="reveal-right">
+        <div class="about-img-grid">
+          <div class="about-img-card img-tall" style="background-image:url('hotel-masineni-grand-anantapur-hotels-2e357rg.avif');background-size:cover;background-position:center;"></div>
+          <div class="about-img-card" style="background-image:url('3300_room.webp');background-size:cover;background-position:center;height:200px;"></div>
+          <div class="about-img-card" style="background-image:url('petals_dining.webp');background-size:cover;background-position:center;height:200px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section-pad bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">Our Philosophy</p>
+        <h2>What We Stand For</h2>
+        <p class="section-desc">Three pillars that define every experience at Hotel Masineni Grand.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <span class="value-icon">🌟</span>
+          <h3>Uncompromising Excellence</h3>
+          <p>Every room, every meal, every interaction is held to the highest standard. We never settle for ordinary — because you deserve the extraordinary.</p>
+        </div>
+        <div class="value-card reveal stagger-1">
+          <span class="value-icon">🤝</span>
+          <h3>Authentic Warmth</h3>
+          <p>Our hospitality is rooted in Indian tradition — genuine, heartfelt, and attentive. We treat every guest as an honored member of our family.</p>
+        </div>
+        <div class="value-card reveal stagger-2">
+          <span class="value-icon">💎</span>
+          <h3>Accessible Luxury</h3>
+          <p>World-class luxury should not be a privilege of the few. We make premium experiences available at prices that welcome everyone who seeks the finest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MILESTONES -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">Our Journey</p>
+        <h2>Milestones & Heritage</h2>
+      </div>
+      <div style="max-width:640px;margin:0 auto;" class="reveal">
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-year">The Beginning</p>
+            <h4>Establishment of Masineni Grand</h4>
+            <p>Hotel Masineni Grand opened its doors in Anantapur with a vision to redefine luxury hospitality in the Rayalaseema region.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">Culinary Expansion</p>
+            <h4>Petals & Tasttyy 24 Launch</h4>
+            <p>We opened our two flagship restaurants — Petals for India's finest vegetarian cuisine, and Tasttyy 24 for a 24-hour multi-cuisine journey.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">Lifestyle Upgrade</p>
+            <h4>Irish Over Café & Gym</h4>
+            <p>The launch of our charming 24/7 café "Irish Over" and a fully-equipped modern gymnasium elevated the hotel to a complete lifestyle destination.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">Recognition</p>
+            <h4>Rated #1 in Rayalaseema</h4>
+            <p>Guests and travel platforms recognized Hotel Masineni Grand as the premier hotel in the entire Rayalaseema region — a title we wear with pride.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">Today</p>
+            <h4>Continuing the Legacy</h4>
+            <p>We continue to invest in our team, our spaces, and our guests — elevating every experience to match the evolving expectations of modern luxury.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section-pad bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">Our People</p>
+        <h2>The Team Behind the Grand</h2>
+        <p class="section-desc">Our dedicated professionals bring passion, expertise, and genuine warmth to every interaction.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar" style="background:linear-gradient(135deg,var(--gold-dark),var(--accent-purple));">👨‍💼</div>
+          <h4>Mr. Ram Prasad</h4>
+          <p>Front Office Manager</p>
+          <span>Always helpful and welcoming — the face of Masineni Grand's warm hospitality experience.</span>
+        </div>
+        <div class="team-card reveal stagger-1">
+          <div class="team-avatar" style="background:linear-gradient(135deg,var(--accent-teal),#1d4e2a);">👨‍🍳</div>
+          <h4>Chef Manmath</h4>
+          <p>Head of Petals Restaurant</p>
+          <span>Delivering excellence in authentic vegetarian cuisine with creativity and precision at every service.</span>
+        </div>
+        <div class="team-card reveal stagger-2">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#6F4E37,#3E2723);">🤵</div>
+          <h4>The Reservations Team</h4>
+          <p>Guest Relations</p>
+          <span>Available 24/7 to ensure every booking and request is handled with the utmost care and efficiency.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="hero-stats" style="position:static;background:var(--glass-4);border:1px solid var(--glass-border);border-radius:var(--radius-lg);backdrop-filter:blur(20px);padding:40px 2rem;" class="reveal">
+        <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Rooms & Suites</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">300+</span><span class="stat-label">Dining Seats</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Concierge</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">#1</span><span class="stat-label">In Rayalaseema</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-main">Masineni Grand</span><span class="logo-sub">Anantapur, Andhra Pradesh</span><p class="footer-tagline">Where Luxury Meets Warmth</p></div>
+      <nav class="footer-nav"><a href="aboutus.html">About</a><a href="accommodation.html">Rooms</a><a href="dining.html">Dining</a><a href="facilities.html">Facilities</a><a href="banquets.html">Banquets</a><a href="contact-us.html">Contact</a></nav>
+      <div class="footer-socials"><a href="https://www.facebook.com/Hotel-Masineni-Grand-944732685580276/" target="_blank" class="social-icon">📘</a><a href="https://www.instagram.com/hotelmasinenigrand/" target="_blank" class="social-icon">📸</a><a href="tel:7799718535" class="social-icon">📞</a></div>
+      <div class="footer-bottom"><p>© 2025 Hotel Masineni Grand. All rights reserved. &nbsp;|&nbsp; reservations@hotelmasinenigrand.com</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

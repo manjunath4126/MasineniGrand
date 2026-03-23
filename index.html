@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Masineni Grand — Anantapur's Premier Luxury Hotel</title>
+  <meta name="description" content="Hotel Masineni Grand, Anantapur. Luxury stays, award-winning dining, world-class amenities. Book your stay today." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-orb ambient-orb-1"></div>
+  <div class="ambient-orb ambient-orb-2"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Masineni Grand</span>
+        <span class="logo-sub">Anantapur · Est. Heritage</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="accommodation.html">Rooms</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="banquets.html">Banquets</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <a href="accommodation.html" class="btn-book-nav">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg" style="background-image:url('hotel-masineni-grand-anantapur-hotels-2e357rg.avif');background-size:cover;background-position:center;background-repeat:no-repeat;"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to</p>
+      <h1>Hotel Masineni Grand</h1>
+      <p class="hero-subtitle">Anantapur's Crown Jewel</p>
+      <p class="hero-tagline">Where timeless elegance meets warm Indian hospitality</p>
+      <div class="hero-cta">
+        <a href="accommodation.html" class="btn-primary">Reserve a Room</a>
+        <a href="aboutus.html" class="btn-ghost">Discover Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="150" data-suffix="+">150+</span><span class="stat-label">Rooms</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Restaurants</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Service</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">#1</span><span class="stat-label">In Rayalaseema</span></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="luxury-strip">
+    <div class="strip-track" id="stripTrack">
+      <span class="strip-item">Luxury Rooms <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Fine Dining <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Banquet Events <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">24/7 Service <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Rooftop Bar <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Modern Gym <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Free Wi-Fi <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Irish Over Café <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Petals Restaurant <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Tasttyy 24 <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Luxury Rooms <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Fine Dining <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Banquet Events <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">24/7 Service <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Rooftop Bar <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Modern Gym <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Free Wi-Fi <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Irish Over Café <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Petals Restaurant <span class="strip-diamond">✦</span></span>
+      <span class="strip-item">Tasttyy 24 <span class="strip-diamond">✦</span></span>
+    </div>
+  </div>
+
+  <!-- BOOKING -->
+  <section id="booking">
+    <div class="booking-bar">
+      <p class="booking-title">Reserve Your Stay</p>
+      <form class="booking-form" id="bookingForm" onsubmit="handleBooking(event)">
+        <div class="form-group">
+          <label for="checkIn">Check-In</label>
+          <input type="date" id="checkIn" name="checkIn" required />
+        </div>
+        <div class="form-group">
+          <label for="checkOut">Check-Out</label>
+          <input type="date" id="checkOut" name="checkOut" required />
+        </div>
+        <div class="form-group">
+          <label for="roomType">Room Type</label>
+          <select id="roomType">
+            <option>Executive Single</option>
+            <option>Premium Single</option>
+            <option>Suite</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        </div>
+        <button type="submit" class="btn-primary book-btn">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section-pad">
+    <div class="container split-layout">
+      <div class="split-text reveal-left">
+        <p class="eyebrow">Our Heritage</p>
+        <h2>The Heart of Anantapur</h2>
+        <div class="gold-rule"><div class="gold-rule-diamond"></div></div>
+        <p class="body-text">Nestled in the heart of Anantapur, Hotel Masineni Grand stands as the city's most celebrated luxury destination — blending world-class hospitality with the warmth of authentic Indian tradition.</p>
+        <p class="body-text">From spacious executive rooms to our opulent suites, every corner reflects our commitment to excellence at prices that make luxury truly accessible.</p>
+        <div class="about-highlights">
+          <div class="highlight-item"><span class="highlight-icon">★</span><span>Rated #1 in Rayalaseema</span></div>
+          <div class="highlight-item"><span class="highlight-icon">✦</span><span>Prime City-Centre Location, Anantapur</span></div>
+          <div class="highlight-item"><span class="highlight-icon">◈</span><span>3 Award-Winning Restaurants</span></div>
+        </div>
+        <br>
+        <a href="aboutus.html" class="btn-outline">Our Full Story →</a>
+      </div>
+      <div class="split-visual reveal-right">
+        <div class="about-img-grid">
+          <div class="about-img-card img-tall" style="background-image:url('hotel-masineni-grand-anantapur-hotels-2e357rg.avif');background-size:cover;background-position:center;"></div>
+          <div class="about-img-card" style="background-image:url('3300_room.webp');background-size:cover;background-position:center;height:200px;"></div>
+          <div class="about-img-card" style="background-image:url('petals_dining.webp');background-size:cover;background-position:center;height:200px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS PREVIEW -->
+  <section class="section-pad bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">Accommodations</p>
+        <h2>Rooms & Suites</h2>
+        <p class="section-desc">Three distinct sanctuaries of comfort — each designed to elevate your stay into an unforgettable experience.</p>
+      </div>
+      <div class="rooms-grid">
+        <div class="room-card reveal">
+          <div class="room-img" style="background-image:url('3300_room.webp');background-size:cover;background-position:center;"><div class="room-badge">Best Value</div></div>
+          <div class="room-info">
+            <h3>Executive Single</h3>
+            <p>Spacious rooms with queen-size bed, customized furniture, and modern amenities.</p>
+            <ul class="room-amenities"><li>Queen Size Bed</li><li>Custom Furniture</li><li>Free Wi-Fi</li><li>Room Service</li></ul>
+            <div class="room-footer"><div><span class="price-amt">₹3,300</span><p class="price-note">+ Tax / night</p></div><a href="accommodation.html" class="btn-outline">View Room</a></div>
+          </div>
+        </div>
+        <div class="room-card reveal stagger-1 featured-room">
+          <div class="room-img" style="background-image:url('3600_room.avif');background-size:cover;background-position:center;"><div class="room-badge gold-badge">Most Popular</div></div>
+          <div class="room-info">
+            <h3>Premium Single</h3>
+            <p>King-size bed with gel-infused pillow top, premium linens and refined décor.</p>
+            <ul class="room-amenities"><li>King Size Bed</li><li>Pillow Top Mattress</li><li>Minibar</li><li>Smart TV</li></ul>
+            <div class="room-footer"><div><span class="price-amt">₹3,600</span><p class="price-note">+ Tax / night</p></div><a href="accommodation.html" class="btn-outline">View Room</a></div>
+          </div>
+        </div>
+        <div class="room-card reveal stagger-2">
+          <div class="room-img" style="background-image:url('8500_room.webp');background-size:cover;background-position:center;"><div class="room-badge purple-badge">Luxury</div></div>
+          <div class="room-info">
+            <h3>Suite</h3>
+            <p>A grand suite with separate sitting room and bedroom for the discerning guest.</p>
+            <ul class="room-amenities"><li>Separate Living Room</li><li>Premium Suite Bed</li><li>Jacuzzi Bath</li><li>Butler Service</li></ul>
+            <div class="room-footer"><div><span class="price-amt">₹8,500</span><p class="price-note">+ Tax / night</p></div><a href="accommodation.html" class="btn-outline">View Room</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DINING PREVIEW -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">Culinary Excellence</p>
+        <h2>Dining & Restaurants</h2>
+        <p class="section-desc">From vegetarian gourmet to global cuisine and a charming café — a complete culinary world within our walls.</p>
+      </div>
+      <div class="dining-grid">
+        <div class="dining-card reveal">
+          <div class="dining-icon-wrap" style="background-image:url('petals_dining.webp');background-size:cover;background-position:center;overflow:hidden;"></div>
+          <div class="dining-body"><span class="dining-tag">Pure Vegetarian</span><h3>Petals</h3><p>India's finest vegetarian dishes in a beautiful ambience welcoming 150 guests.</p><span class="dining-detail">🕐 Open Daily &nbsp;|&nbsp; 👥 150 Guests</span></div>
+        </div>
+        <div class="dining-card reveal stagger-1">
+          <div class="dining-icon-wrap" style="background-image:url('masineni_tastyyy24.webp');background-size:cover;background-position:center;overflow:hidden;"></div>
+          <div class="dining-body"><span class="dining-tag">Multi Cuisine</span><h3>Tasttyy 24</h3><p>A global culinary journey in our fine dining atmosphere, open 24 hours for 150 guests.</p><span class="dining-detail">🕐 24 Hours &nbsp;|&nbsp; 👥 150 Guests</span></div>
+        </div>
+        <div class="dining-card reveal stagger-2">
+          <div class="dining-icon-wrap" style="background:linear-gradient(135deg,#6F4E37,#3E2723);">☕</div>
+          <div class="dining-body"><span class="dining-tag">Coffee Shop</span><h3>Irish Over</h3><p>A charming café with comfort food and freshly brewed coffee, open 24/7.</p><span class="dining-detail">🕐 Open 24/7 &nbsp;|&nbsp; 🏠 Cozy Ambience</span></div>
+        </div>
+        <div class="dining-card reveal stagger-3">
+          <div class="dining-icon-wrap" style="background-image:url('masineni_bar.avif');background-size:cover;background-position:center;overflow:hidden;"></div>
+          <div class="dining-body"><span class="dining-tag">Bar & Lounge</span><h3>The Bar</h3><p>Wide choice of spirits, cocktails and mocktails on the first floor lounge.</p><span class="dining-detail">🕐 Evening Hours &nbsp;|&nbsp; 🥂 Full Bar</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;"><a href="dining.html" class="btn-ghost">Explore All Dining →</a></div>
+    </div>
+  </section>
+
+  <!-- BANQUET CTA -->
+  <section class="section-pad banquet-section" style="background-image:url('masineni_banquet.webp');background-size:cover;background-position:center;background-attachment:fixed;">
+    <div class="container">
+      <div class="banquet-content reveal">
+        <p class="eyebrow centered">Special Events</p>
+        <h2>Grand Banquets & Events</h2>
+        <div class="gold-rule"><div class="gold-rule-diamond"></div></div>
+        <p class="body-text" style="max-width:560px;margin:0 auto 2rem;">From grand weddings to corporate conferences, our expert team brings every vision to life with flawless execution.</p>
+        <div class="banquet-services">
+          <div class="banquet-service">💍 Weddings</div>
+          <div class="banquet-service">🏢 Corporate Events</div>
+          <div class="banquet-service">🎂 Celebrations</div>
+          <div class="banquet-service">🍽️ Outdoor Catering</div>
+        </div>
+        <a href="banquets.html" class="btn-primary">Enquire About Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section-pad bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow centered">Guest Voices</p>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The best hotel in Anantapur — well maintained, excellent food, outstanding service. Highly recommend!"</p>
+          <div class="reviewer"><div class="reviewer-avatar">R</div><div><p class="reviewer-name">Reju Augustine</p><p class="reviewer-source">Facebook Review</p></div></div>
+        </div>
+        <div class="review-card reveal stagger-1 featured-review">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Compared with Paris's Novotel — Masineni is awesome in hospitality. It's truly Grand! Number one in Rayalaseema."</p>
+          <div class="reviewer"><div class="reviewer-avatar">S</div><div><p class="reviewer-name">Sunny Hkg</p><p class="reviewer-source">Facebook Review</p></div></div>
+        </div>
+        <div class="review-card reveal stagger-2">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Very good hotel, probably the best choice in Anantapur. Rooms are spacious, staff very attentive."</p>
+          <div class="reviewer"><div class="reviewer-avatar">P</div><div><p class="reviewer-name">Pradeep Kamath</p><p class="reviewer-source">Google Places</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-main">Masineni Grand</span>
+        <span class="logo-sub">Anantapur, Andhra Pradesh</span>
+        <p class="footer-tagline">Where Luxury Meets Warmth</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="aboutus.html">About</a>
+        <a href="accommodation.html">Rooms</a>
+        <a href="dining.html">Dining</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="banquets.html">Banquets</a>
+        <a href="contact-us.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/Hotel-Masineni-Grand-944732685580276/" target="_blank" class="social-icon">📘</a>
+        <a href="https://www.instagram.com/hotelmasinenigrand/" target="_blank" class="social-icon">📸</a>
+        <a href="tel:7799718535" class="social-icon">📞</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Hotel Masineni Grand. All rights reserved. &nbsp;|&nbsp; reservations@hotelmasinenigrand.com</p>
+        <p style="margin-top:4px;">+91-77997 18535 / 77997 18534</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h3 id="modalTitle">Booking Request Sent!</h3>
+      <p id="modalMsg">Our team will contact you to confirm your reservation.</p>
+      <button class="btn-primary" onclick="closeModal()">Done</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
